@@ -1,0 +1,23 @@
+[data-field="Picture"] img {
+    width: 100% !important;
+}
+
+table[data-location=grid] {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    #customLogin {
+        display: none;
+    }
+}
+
+.modal-content .modal-header {
+    border-radius: 5px 5px 0 0;
+    background-image: linear-gradient(#54b4eb, #2FA4E7 60%, #1d9ce5);
+    border-bottom: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}

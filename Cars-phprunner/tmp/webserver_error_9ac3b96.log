@@ -1,0 +1,14 @@
+[Fri Feb 23 15:18:23.992284 2024] [core:warn] [pid 16804:tid 396] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Projects/Cars1/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::2fe3:217a:e768:6132. Set the 'ServerName' directive globally to suppress this message
+[Fri Feb 23 15:18:26.711109 2024] [mpm_winnt:notice] [pid 16804:tid 396] AH00455: Apache/2.4.54 (Win64) PHP/7.4.30 configured -- resuming normal operations
+[Fri Feb 23 15:18:26.711109 2024] [mpm_winnt:notice] [pid 16804:tid 396] AH00456: Server built: Jul 26 2022 23:58:26
+[Fri Feb 23 15:18:26.711109 2024] [core:notice] [pid 16804:tid 396] AH00094: Command line: 'C:\\Program Files\\PHPRunner10.91\\EmbeddedServer64\\bin\\httpd.exe -d C:/Program Files/PHPRunner10.91/EmbeddedServer64 -d C:\\Program Files\\PHPRunner10.91\\EmbeddedServer64 -f C:\\Projects\\Cars1\\tmp\\webserver.conf'
+[Fri Feb 23 15:18:26.724656 2024] [mpm_winnt:notice] [pid 16804:tid 396] AH00418: Parent: Created child process 7748
+[Fri Feb 23 15:18:27.129408 2024] [core:warn] [pid 7748:tid 384] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Projects/Cars1/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::2fe3:217a:e768:6132. Set the 'ServerName' directive globally to suppress this message
+[Fri Feb 23 15:18:27.168207 2024] [core:warn] [pid 7748:tid 384] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Projects/Cars1/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::2fe3:217a:e768:6132. Set the 'ServerName' directive globally to suppress this message
+[Fri Feb 23 15:18:27.218399 2024] [mpm_winnt:notice] [pid 7748:tid 384] AH00354: Child: Starting 64 worker threads.
+[Fri Feb 23 15:49:44.143703 2024] [mpm_winnt:notice] [pid 16804:tid 396] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Feb 23 15:49:46.169018 2024] [mpm_winnt:notice] [pid 7748:tid 384] AH00364: Child: All worker threads have exited.
+[Fri Feb 23 15:49:46.209618 2024] [mpm_winnt:notice] [pid 16804:tid 396] AH00430: Parent: Child process 7748 exited successfully.

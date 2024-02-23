@@ -1,0 +1,102 @@
+
+.function-login{
+	background-image: url("../../images/carslogin3.jpg");
+	background-size:100%;
+	background-repeat: no-repeat;
+}
+@media (min-width: 767px) {
+	.navbar-nav {
+		 padding-left: 180px !important;
+	}
+}
+
+.panel-default {
+	border-radius:0px !important;
+	margin-bottom:0px !important;
+}
+.bs-grid-vertical > .r-record-body > .panel {
+   height: auto !important;
+}
+.panel-default:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.bs-grid-vertical > .r-record-body > .panel > .panel-body {	
+	padding: 0px !important;
+}
+
+[data-field="Picture"]{
+	display: -webkit-box !important;
+}
+
+.panel-body:hover, div.panel-heading:hover + div.panel-body {
+	background-color: transparent !important;
+}
+span[data-field=descr]{
+    height: 130px;
+    overflow: hidden;
+	padding:5px;
+}
+.panel-body:hover table>tbody>tr:nth-child(4)>td, /*div.panel-heading:hover + div.panel-body table>tbody>tr:nth-child(4)>td*/{
+   background-color:#e6e6e6 !important;
+}
+.filesUpload{
+	color:white;
+}
+.rnr-dragndrop-area {
+     width: 400px;
+}
+[data-field="Picture"] img {
+    width: 100% !important;
+}
+
+.carslist .r-grid .r-record-body > .panel,.car_info_add {
+    box-shadow: rgba(25, 41, 61, 0.18) 0px 2px 3px 1px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    transform: translateZ(0px);
+}
+.carslist .r-grid .r-record-body > .panel:hover{-webkit-transition:all 0.2s;transition:all 0.2s;box-shadow:0 14px 21px rgba(24,41,61,0.1);z-index:50px;}
+[data-itemtype="details_found"]{
+/*color: #ebe7e7;
+font-weight: 600;*/
+}
+.car_info_add{
+  margin-top: 10px;
+  color: #aab1c7;
+}    
+.car_info_add img{
+	margin-left: 15px;
+}
+.car_info_add .lefttd{
+	text-align:left;
+}
+.car_info_add .righttd{
+	text-align:right;
+}
+.car_info_add .lefttd,.righttd{
+	padding:5px;
+}
+.car_info_add .price{
+	color: #2fa4e7;
+}
+.car_info_add #lightgallery{
+	margin-bottom:0px;
+}
+#slider_Horsepower, #slider_Price{
+	display: inline-block;
+	width: 70%;
+	margin-left:15%;
+}
+.ui-slider .ui-slider-handle{
+padding:0 !important;
+}
+.carslist.list .dollarsym{
+	margin-right: 2px;
+	font-size: 14px;
+	position: relative;
+	top: -4px;
+}
+
+.carslist.list.loggedIn .r-menu.nav.menu-treelike{
+	display:none !important;
+}

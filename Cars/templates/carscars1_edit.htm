@@ -1,0 +1,540 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel public_carscars edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Back to list</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="carscars1_view.php?{$editlink}" {$view_page_button_attrs}>View</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN category_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_category}  r-vertical-field" 
+	data-signal-error-for="category{$id}" {$required_attr_category}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="category" data-fieldname="category" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_category}">
+		{BEGIN category_label}{$label public_carscars category }{END category_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$category_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="category" {$tooltipAttr public_carscars category } >
+		<div class="text-muted" >
+		{$tooltip public_carscars category }		</div>
+	</div>
+</div>
+
+
+{END category_fieldblock}
+											
+{BEGIN color_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_color}  r-vertical-field" 
+	data-signal-error-for="color{$id}" {$required_attr_color}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="color" data-fieldname="color" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_color}">
+		{BEGIN color_label}{$label public_carscars color }{END color_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$color_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="color" {$tooltipAttr public_carscars color } >
+		<div class="text-muted" >
+		{$tooltip public_carscars color }		</div>
+	</div>
+</div>
+
+
+{END color_fieldblock}
+											
+{BEGIN Date_Listed_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Date_Listed}  r-vertical-field" 
+	data-signal-error-for="Date_Listed{$id}" {$required_attr_Date_Listed}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="Date_Listed" data-fieldname="Date Listed" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Date_Listed}">
+		{BEGIN Date_Listed_label}{$label public_carscars Date_Listed }{END Date_Listed_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Date_Listed_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Date_Listed" {$tooltipAttr public_carscars Date_Listed } >
+		<div class="text-muted" >
+		{$tooltip public_carscars Date_Listed }		</div>
+	</div>
+</div>
+
+
+{END Date_Listed_fieldblock}
+											
+{BEGIN descr_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_descr}  r-vertical-field" 
+	data-signal-error-for="descr{$id}" {$required_attr_descr}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="descr" data-fieldname="descr" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_descr}">
+		{BEGIN descr_label}{$label public_carscars descr }{END descr_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$descr_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="descr" {$tooltipAttr public_carscars descr } >
+		<div class="text-muted" >
+		{$tooltip public_carscars descr }		</div>
+	</div>
+</div>
+
+
+{END descr_fieldblock}
+											
+{BEGIN EPACity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EPACity}  r-vertical-field" 
+	data-signal-error-for="EPACity{$id}" {$required_attr_EPACity}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="EPACity" data-fieldname="EPACity" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_EPACity}">
+		{BEGIN EPACity_label}{$label public_carscars EPACity }{END EPACity_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$EPACity_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="EPACity" {$tooltipAttr public_carscars EPACity } >
+		<div class="text-muted" >
+		{$tooltip public_carscars EPACity }		</div>
+	</div>
+</div>
+
+
+{END EPACity_fieldblock}
+											
+{BEGIN EPAHighway_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EPAHighway}  r-vertical-field" 
+	data-signal-error-for="EPAHighway{$id}" {$required_attr_EPAHighway}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="EPAHighway" data-fieldname="EPAHighway" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_EPAHighway}">
+		{BEGIN EPAHighway_label}{$label public_carscars EPAHighway }{END EPAHighway_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$EPAHighway_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="EPAHighway" {$tooltipAttr public_carscars EPAHighway } >
+		<div class="text-muted" >
+		{$tooltip public_carscars EPAHighway }		</div>
+	</div>
+</div>
+
+
+{END EPAHighway_fieldblock}
+											
+{BEGIN features_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_features}  r-vertical-field" 
+	data-signal-error-for="features{$id}" {$required_attr_features}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="features" data-fieldname="features" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_features}">
+		{BEGIN features_label}{$label public_carscars features }{END features_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$features_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="features" {$tooltipAttr public_carscars features } >
+		<div class="text-muted" >
+		{$tooltip public_carscars features }		</div>
+	</div>
+</div>
+
+
+{END features_fieldblock}
+											
+{BEGIN Horsepower_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Horsepower}  r-vertical-field" 
+	data-signal-error-for="Horsepower{$id}" {$required_attr_Horsepower}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="Horsepower" data-fieldname="Horsepower" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Horsepower}">
+		{BEGIN Horsepower_label}{$label public_carscars Horsepower }{END Horsepower_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Horsepower_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Horsepower" {$tooltipAttr public_carscars Horsepower } >
+		<div class="text-muted" >
+		{$tooltip public_carscars Horsepower }		</div>
+	</div>
+</div>
+
+
+{END Horsepower_fieldblock}
+											
+{BEGIN Make_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Make}  r-vertical-field" 
+	data-signal-error-for="Make{$id}" {$required_attr_Make}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="Make" data-fieldname="Make" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Make}">
+		{BEGIN Make_label}{$label public_carscars Make }{END Make_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Make_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Make" {$tooltipAttr public_carscars Make } >
+		<div class="text-muted" >
+		{$tooltip public_carscars Make }		</div>
+	</div>
+</div>
+
+
+{END Make_fieldblock}
+											
+{BEGIN Model_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Model}  r-vertical-field" 
+	data-signal-error-for="Model{$id}" {$required_attr_Model}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="Model" data-fieldname="Model" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Model}">
+		{BEGIN Model_label}{$label public_carscars Model }{END Model_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Model_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Model" {$tooltipAttr public_carscars Model } >
+		<div class="text-muted" >
+		{$tooltip public_carscars Model }		</div>
+	</div>
+</div>
+
+
+{END Model_fieldblock}
+											
+{BEGIN Phone___fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Phone__}  r-vertical-field" 
+	data-signal-error-for="Phone__{$id}" {$required_attr_Phone__}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="Phone__" data-fieldname="Phone #" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Phone__}">
+		{BEGIN Phone___label}{$label public_carscars Phone__ }{END Phone___label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Phone___editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Phone__" {$tooltipAttr public_carscars Phone__ } >
+		<div class="text-muted" >
+		{$tooltip public_carscars Phone__ }		</div>
+	</div>
+</div>
+
+
+{END Phone___fieldblock}
+											
+{BEGIN Picture_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Picture}  r-vertical-field" 
+	data-signal-error-for="Picture{$id}" {$required_attr_Picture}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="Picture" data-fieldname="Picture" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Picture}">
+		{BEGIN Picture_label}{$label public_carscars Picture }{END Picture_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Picture_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Picture" {$tooltipAttr public_carscars Picture } >
+		<div class="text-muted" >
+		{$tooltip public_carscars Picture }		</div>
+	</div>
+</div>
+
+
+{END Picture_fieldblock}
+											
+{BEGIN Price_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Price}  r-vertical-field" 
+	data-signal-error-for="Price{$id}" {$required_attr_Price}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="Price" data-fieldname="Price" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_Price}">
+		{BEGIN Price_label}{$label public_carscars Price }{END Price_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Price_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="Price" {$tooltipAttr public_carscars Price } >
+		<div class="text-muted" >
+		{$tooltip public_carscars Price }		</div>
+	</div>
+</div>
+
+
+{END Price_fieldblock}
+											
+{BEGIN UserID_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UserID}  r-vertical-field" 
+	data-signal-error-for="UserID{$id}" {$required_attr_UserID}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="UserID" data-fieldname="UserID" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_UserID}">
+		{BEGIN UserID_label}{$label public_carscars UserID }{END UserID_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$UserID_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="UserID" {$tooltipAttr public_carscars UserID } >
+		<div class="text-muted" >
+		{$tooltip public_carscars UserID }		</div>
+	</div>
+</div>
+
+
+{END UserID_fieldblock}
+											
+{BEGIN YearOfMake_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_YearOfMake}  r-vertical-field" 
+	data-signal-error-for="YearOfMake{$id}" {$required_attr_YearOfMake}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="YearOfMake" data-fieldname="YearOfMake" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_YearOfMake}">
+		{BEGIN YearOfMake_label}{$label public_carscars YearOfMake }{END YearOfMake_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$YearOfMake_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="YearOfMake" {$tooltipAttr public_carscars YearOfMake } >
+		<div class="text-muted" >
+		{$tooltip public_carscars YearOfMake }		</div>
+	</div>
+</div>
+
+
+{END YearOfMake_fieldblock}
+											
+{BEGIN zipcode_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_zipcode}  r-vertical-field" 
+	data-signal-error-for="zipcode{$id}" {$required_attr_zipcode}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="zipcode" data-fieldname="zipcode" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_zipcode}">
+		{BEGIN zipcode_label}{$label public_carscars zipcode }{END zipcode_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$zipcode_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="zipcode" {$tooltipAttr public_carscars zipcode } >
+		<div class="text-muted" >
+		{$tooltip public_carscars zipcode }		</div>
+	</div>
+</div>
+
+
+{END zipcode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Save			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancel			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reset		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  href="carscars1_view.php?{$editlink}" {$view_page_button_attrs}  title="" >
+				
+		View		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

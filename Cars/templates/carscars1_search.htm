@@ -1,0 +1,524 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel public_carscars search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN category_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_category}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="category{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="category" data-fieldname="category" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_category}">
+		{$label public_carscars category }	</label>
+	<div class="r-search-option">
+		{$searchtype_category}
+	</div>
+	<div class="r-search-field">
+		{$category_editcontrol}	</div>
+	<div class="r-search-field">
+		{$category_editcontrol1}
+	</div>
+	
+</div>
+
+{END category_fieldblock}
+											
+{BEGIN color_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_color}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="color{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="color" data-fieldname="color" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_color}">
+		{$label public_carscars color }	</label>
+	<div class="r-search-option">
+		{$searchtype_color}
+	</div>
+	<div class="r-search-field">
+		{$color_editcontrol}	</div>
+	<div class="r-search-field">
+		{$color_editcontrol1}
+	</div>
+	
+</div>
+
+{END color_fieldblock}
+											
+{BEGIN Date_Listed_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Date_Listed}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Date_Listed{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="Date_Listed" data-fieldname="Date Listed" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Date_Listed}">
+		{$label public_carscars Date_Listed }	</label>
+	<div class="r-search-option">
+		{$searchtype_Date_Listed}
+	</div>
+	<div class="r-search-field">
+		{$Date_Listed_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Date_Listed_editcontrol1}
+	</div>
+	
+</div>
+
+{END Date_Listed_fieldblock}
+											
+{BEGIN descr_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_descr}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="descr{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="descr" data-fieldname="descr" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_descr}">
+		{$label public_carscars descr }	</label>
+	<div class="r-search-option">
+		{$searchtype_descr}
+	</div>
+	<div class="r-search-field">
+		{$descr_editcontrol}	</div>
+	<div class="r-search-field">
+		{$descr_editcontrol1}
+	</div>
+	
+</div>
+
+{END descr_fieldblock}
+											
+{BEGIN EPACity_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EPACity}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="EPACity{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="EPACity" data-fieldname="EPACity" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_EPACity}">
+		{$label public_carscars EPACity }	</label>
+	<div class="r-search-option">
+		{$searchtype_EPACity}
+	</div>
+	<div class="r-search-field">
+		{$EPACity_editcontrol}	</div>
+	<div class="r-search-field">
+		{$EPACity_editcontrol1}
+	</div>
+	
+</div>
+
+{END EPACity_fieldblock}
+											
+{BEGIN EPAHighway_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EPAHighway}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="EPAHighway{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="EPAHighway" data-fieldname="EPAHighway" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_EPAHighway}">
+		{$label public_carscars EPAHighway }	</label>
+	<div class="r-search-option">
+		{$searchtype_EPAHighway}
+	</div>
+	<div class="r-search-field">
+		{$EPAHighway_editcontrol}	</div>
+	<div class="r-search-field">
+		{$EPAHighway_editcontrol1}
+	</div>
+	
+</div>
+
+{END EPAHighway_fieldblock}
+											
+{BEGIN features_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_features}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="features{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="features" data-fieldname="features" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_features}">
+		{$label public_carscars features }	</label>
+	<div class="r-search-option">
+		{$searchtype_features}
+	</div>
+	<div class="r-search-field">
+		{$features_editcontrol}	</div>
+	<div class="r-search-field">
+		{$features_editcontrol1}
+	</div>
+	
+</div>
+
+{END features_fieldblock}
+											
+{BEGIN Horsepower_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Horsepower}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Horsepower{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="Horsepower" data-fieldname="Horsepower" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Horsepower}">
+		{$label public_carscars Horsepower }	</label>
+	<div class="r-search-option">
+		{$searchtype_Horsepower}
+	</div>
+	<div class="r-search-field">
+		{$Horsepower_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Horsepower_editcontrol1}
+	</div>
+	
+</div>
+
+{END Horsepower_fieldblock}
+											
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label public_carscars id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN Make_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Make}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Make{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="Make" data-fieldname="Make" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Make}">
+		{$label public_carscars Make }	</label>
+	<div class="r-search-option">
+		{$searchtype_Make}
+	</div>
+	<div class="r-search-field">
+		{$Make_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Make_editcontrol1}
+	</div>
+	
+</div>
+
+{END Make_fieldblock}
+											
+{BEGIN Model_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Model}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Model{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="Model" data-fieldname="Model" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Model}">
+		{$label public_carscars Model }	</label>
+	<div class="r-search-option">
+		{$searchtype_Model}
+	</div>
+	<div class="r-search-field">
+		{$Model_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Model_editcontrol1}
+	</div>
+	
+</div>
+
+{END Model_fieldblock}
+											
+{BEGIN Phone___fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Phone__}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Phone__{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="Phone__" data-fieldname="Phone #" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Phone__}">
+		{$label public_carscars Phone__ }	</label>
+	<div class="r-search-option">
+		{$searchtype_Phone__}
+	</div>
+	<div class="r-search-field">
+		{$Phone___editcontrol}	</div>
+	<div class="r-search-field">
+		{$Phone___editcontrol1}
+	</div>
+	
+</div>
+
+{END Phone___fieldblock}
+											
+{BEGIN Picture_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Picture}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Picture{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="Picture" data-fieldname="Picture" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Picture}">
+		{$label public_carscars Picture }	</label>
+	<div class="r-search-option">
+		{$searchtype_Picture}
+	</div>
+	<div class="r-search-field">
+		{$Picture_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Picture_editcontrol1}
+	</div>
+	
+</div>
+
+{END Picture_fieldblock}
+											
+{BEGIN Price_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Price}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="Price{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="Price" data-fieldname="Price" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_Price}">
+		{$label public_carscars Price }	</label>
+	<div class="r-search-option">
+		{$searchtype_Price}
+	</div>
+	<div class="r-search-field">
+		{$Price_editcontrol}	</div>
+	<div class="r-search-field">
+		{$Price_editcontrol1}
+	</div>
+	
+</div>
+
+{END Price_fieldblock}
+											
+{BEGIN UserID_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_UserID}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="UserID{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="UserID" data-fieldname="UserID" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_UserID}">
+		{$label public_carscars UserID }	</label>
+	<div class="r-search-option">
+		{$searchtype_UserID}
+	</div>
+	<div class="r-search-field">
+		{$UserID_editcontrol}	</div>
+	<div class="r-search-field">
+		{$UserID_editcontrol1}
+	</div>
+	
+</div>
+
+{END UserID_fieldblock}
+											
+{BEGIN YearOfMake_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_YearOfMake}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="YearOfMake{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="YearOfMake" data-fieldname="YearOfMake" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_YearOfMake}">
+		{$label public_carscars YearOfMake }	</label>
+	<div class="r-search-option">
+		{$searchtype_YearOfMake}
+	</div>
+	<div class="r-search-field">
+		{$YearOfMake_editcontrol}	</div>
+	<div class="r-search-field">
+		{$YearOfMake_editcontrol1}
+	</div>
+	
+</div>
+
+{END YearOfMake_fieldblock}
+											
+{BEGIN zipcode_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_zipcode}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="zipcode{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="zipcode" data-fieldname="zipcode" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_zipcode}">
+		{$label public_carscars zipcode }	</label>
+	<div class="r-search-option">
+		{$searchtype_zipcode}
+	</div>
+	<div class="r-search-field">
+		{$zipcode_editcontrol}	</div>
+	<div class="r-search-field">
+		{$zipcode_editcontrol1}
+	</div>
+	
+</div>
+
+{END zipcode_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							Search			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reset			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Back to list			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancel			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
