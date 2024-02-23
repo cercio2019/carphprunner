@@ -1,7 +1,0 @@
-carsbcolor
-carscars
-carscategory
-carsform
-carsmake
-carsmodels
-carsusers
